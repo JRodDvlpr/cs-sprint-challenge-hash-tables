@@ -2,11 +2,17 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     YOUR CODE HERE
     """
-    ## Sorting to Dictionaries
-    ## Storing each weight as a key, value will be that weights index
+    # Sorting to Dictionaries
+    # Storing each weight as a key, value will be that weights index
+    
     w_dict = {}
+    
     # Your code here
+    
+    # enumerate allows us to switch values 
+    # swithcing the values and storing them in w_dict
     for i, k in enumerate(weights):
+        # check to see if limit - weight is in w_dict
         if k in w_dict:
             w_dict[k].append(i)
         else:

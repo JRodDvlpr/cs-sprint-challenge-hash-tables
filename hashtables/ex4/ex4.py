@@ -2,7 +2,15 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    # hash table
+    hash_tbl = {}
+    # array for result
+    result = []
+ 
+    for num in a:
+        hash_tbl[num] = num
+        if num != 0 and -num in hash_tbl:
+            result.append(abs(num))
 
     return result
 
